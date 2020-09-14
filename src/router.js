@@ -32,6 +32,30 @@ export default new Router({
       name: 'cards',
       component: () =>
         import( /* webpackChunkName: "list" */ './views/Cards.vue')
+    },
+    {
+      path: '/simple',
+      name: 'simple',
+      component: () =>
+        import( /* webpackChunkName: "simple" */ './views/Simple.vue')
+    },
+    {
+      path: '/stagger',
+      name: 'stagger',
+      component: () =>
+        import( /* webpackChunkName: "stagger" */ './views/Stagger.vue')
+    },
+    {
+      path: '/state',
+      name: 'state',
+      component: () =>
+        import( /* webpackChunkName: "state" */ './views/State.vue')
     }
+    // {
+    //   path: '/timeline',
+    //   name: 'timeline',
+    //   component: () =>
+    //     import( /* webpackChunkName: "timeline" */ './views/Timeline.vue')
+    // }
   ]
 })
